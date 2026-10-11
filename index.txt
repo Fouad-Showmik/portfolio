@@ -2,8 +2,8 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Mutasim Fouad Showmik
+Mutasim Fouad Showmik
 Web developer
 
 Show Contacts
@@ -58,25 +58,11 @@ Photography
 I make high-quality photos of any category at a professional level.
 
 
-## testimonials
+## research and publications
 
-Testimonials
+Research and Publications
 
-alt = Daniel lewis
-Daniel lewis
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-
-alt = Jessica miller
-Jessica miller
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-
-alt = Emily evans
-Emily evans
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-
-alt = Henry william
-Henry william
-Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+The visible placeholder card in index.html shows where to add a publication title, description, and link. Duplicate its list item for each publication, update the link href, and swipe or scroll horizontally through the cards.
 
 
 ## clients
@@ -231,10 +217,16 @@ Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
 
 Contact
 
-Contact Form
+Get in Touch
+I'm open to junior software engineering opportunities and technical collaboration.
+mutasim.fouad.showmik@gmail.com
+Dhaka, Bangladesh
+
+Send a Message
 
 Full name
 Email address
-Your Message
+Subject (e.g. Job Opportunity)
+Message
 
 Send Message
