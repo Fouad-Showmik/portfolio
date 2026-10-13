@@ -749,6 +749,8 @@ main {
 
 .skill-section-description { font-size: var(--fs-6); }
 
+.skill-section + .timeline { margin-top: 30px; }
+
 .skills-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -1212,6 +1214,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:hover { background: var(--bg-gradient-yellow-1); }
 
 .form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+
+.resume-download-btn.form-btn {
+  width: max-content;
+  margin: 0 0 30px auto;
+}
 
 /* incomplete form: looks inactive but stays clickable so it can explain why */
 
