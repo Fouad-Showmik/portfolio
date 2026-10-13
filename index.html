@@ -178,7 +178,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -784,10 +784,10 @@ marketing content and fostered industry networking opportunities.
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -795,19 +795,19 @@ marketing content and fostered industry networking opportunities.
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn data-filter-value="all">All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn data-filter-value="web">Web</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn data-filter-value="mobile">Mobile</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn data-filter-value="machine-learning">Machine learning</button>
             </li>
 
           </ul>
@@ -827,19 +827,19 @@ marketing content and fostered industry networking opportunities.
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item data-filter-value="all">All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item data-filter-value="web">Web</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item data-filter-value="mobile">Mobile</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item data-filter-value="machine-learning">Machine learning</button>
               </li>
 
             </ul>
@@ -848,166 +848,95 @@ marketing content and fostered industry networking opportunities.
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <li class="project-item active" data-filter-item data-category="machine-learning web">
+              <div class="project-card">
+                <img class="project-image" src="assets\images\Alopecia Factors Detector UI Showcase.png" alt="" aria-hidden="true" loading="lazy">
+                <div class="project-card-content">
+                  <h3 class="project-title">Alopecia Factors Detector</h3>
+                  <p class="project-category">Machine learning · Web</p>
+                  <p class="project-description">Explains hair-loss risk factors, ranked by impact, with a suggestion for each. A serverless proxy keeps the API private.</p>
+                  <ul class="project-tags" aria-label="Technologies">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Cloudflare Pages</li><li>Render</li><li>UptimeRobot</li><li>FlaskAPI</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fouad-Showmik/Alopecia_Factors_Detector_Web_Application" target="_blank" rel="noopener noreferrer">Source Code <span aria-hidden="true">↗</span></a>
+                    <a class="project-link" href="https://alopecia-factors-detector-web-application.pages.dev/" target="_blank" rel="noopener noreferrer">Live Demo <span aria-hidden="true">↗</span></a>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <li class="project-item active" data-filter-item data-category="web">
+              <div class="project-card">
+                <img class="project-image" src="#" alt="" aria-hidden="true" loading="lazy">
+                <div class="project-card-content">
+                  <h3 class="project-title">Personal Portfolio</h3>
+                  <p class="project-category">Web</p>
+                  <p class="project-description">Responsive portfolio with a validated contact form, filterable projects, and accessible navigation. No framework.</p>
+                  <ul class="project-tags" aria-label="Technologies">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fouad-Showmik/portfolio" target="_blank" rel="noopener noreferrer">Source Code <span aria-hidden="true">↗</span></a>
+                    <a class="project-link" href="#">Live Demo <span aria-hidden="true">↗</span></a>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <li class="project-item active" data-filter-item data-category="mobile">
+              <div class="project-card">
+                <img class="project-image" src="assets\images\APP UI.jpg" alt="" aria-hidden="true" loading="lazy">
+                <div class="project-card-content">
+                  <h3 class="project-title">Alopecia Factors Detector</h3>
+                  <p class="project-category">Mobile</p>
+                  <p class="project-description">A cross-platform mobile app that predicts potential hair loss risk factors and provides personalized insights.</p>
+                  <ul class="project-tags" aria-label="Technologies">
+                    <li>Flutter</li><li>Dart</li>
+                  </ul>
+                  <div class="project-links">
+                  
+                    <a class="project-link" href="https://github.com/Fouad-Showmik/Alopecia-Hair-Loss-Factors-Detector" target="_blank">Live Demo <span aria-hidden="true">↗</span></a>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                        <li class="project-item active" data-filter-item data-category="mobile">
+              <div class="project-card">
+                <img class="project-image" src="assets\images\FIFA 2026 App Hero Banner.png" alt="" aria-hidden="true" loading="lazy">
+                <div class="project-card-content">
+                  <h3 class="project-title">Fifa 2026 Live Scores Update</h3>
+                  <p class="project-category">Mobile</p>
+                  <p class="project-description">A Flutter-based mobile app that delivers real-time FIFA World Cup 2026 scores, fixtures, group standings, team info, and venue details — all in a clean dark-themed UI. It auto-polls match data in the background so scores stay up to date without manual refreshes.</p>
+                  <ul class="project-tags" aria-label="Technologies">
+                    <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>Dio</li><li>RESTful API</li><li>JSON Serialization</li><li>Flutter Native Splash</li>  <li>flutter_dotenv</li>
+  <li>Android</li>
+                  </ul>
+                  <div class="project-links">
+                  
+                    <a class="project-link" href="https://github.com/Fouad-Showmik/Fifa_2026_Live_Score_Update_Native_App" target="_blank">Source Code <span aria-hidden="true">↗</span></a>
                   </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <li class="project-item active" data-filter-item data-category="web">
+              <div class="project-card">
+                <img class="project-image" src="#" alt="" aria-hidden="true" loading="lazy">
+                <div class="project-card-content">
+                  <h3 class="project-title">ASP.NET Core Service</h3>
+                  <p class="project-category">Web · Backend</p>
+                  <p class="project-description">N-layer API using the Repository pattern, EF Core, MediatR (CQRS), and RabbitMQ messaging.</p>
+                  <ul class="project-tags" aria-label="Technologies">
+                    <li>ASP.NET Core</li><li>EF Core</li><li>MediatR</li><li>Docker</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fouad-Showmik/Library_Management_System_ASP_.NET_Core" target="_blank" rel="noopener noreferrer">Source Code <span aria-hidden="true">↗</span></a>
+                    <a class="project-link" href="#">Live Demo <span aria-hidden="true">↗</span></a>
                   </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+                </div>
+              </div>
             </li>
 
           </ul>
