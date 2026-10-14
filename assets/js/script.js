@@ -203,6 +203,108 @@ window.addEventListener("pageshow", function (event) {
   }
 });
 
+const imagePreviewDialog = document.querySelector("[data-image-preview-dialog]");
+const imagePreviewTarget = document.querySelector("[data-image-preview-target]");
+const imagePreviewClose = document.querySelector("[data-image-preview-close]");
+const imagePreviewStage = document.querySelector("[data-image-preview-stage]");
+const imagePreviewCanvas = document.querySelector("[data-image-preview-canvas]");
+const imageZoomLevel = document.querySelector("[data-image-zoom-level]");
+const imageZoomIn = document.querySelector("[data-image-zoom-in]");
+const imageZoomOut = document.querySelector("[data-image-zoom-out]");
+const imageZoomFit = document.querySelector("[data-image-zoom-fit]");
+const imagePreviewButtons = document.querySelectorAll("[data-image-preview]");
+let imageZoom = 1;
+let imageFitSize = { width: 0, height: 0 };
+
+const updateImagePreviewSize = function () {
+  if (!imagePreviewTarget.naturalWidth || !imagePreviewTarget.naturalHeight) { return; }
+
+  const availableWidth = imagePreviewStage.clientWidth;
+  const availableHeight = imagePreviewStage.clientHeight;
+  const fitScale = Math.min(
+    availableWidth / imagePreviewTarget.naturalWidth,
+    availableHeight / imagePreviewTarget.naturalHeight
+  );
+
+  imageFitSize = {
+    width: imagePreviewTarget.naturalWidth * fitScale,
+    height: imagePreviewTarget.naturalHeight * fitScale
+  };
+
+  const imageWidth = imageFitSize.width * imageZoom;
+  const imageHeight = imageFitSize.height * imageZoom;
+
+  imagePreviewCanvas.style.width = `${Math.max(availableWidth, imageWidth)}px`;
+  imagePreviewCanvas.style.height = `${Math.max(availableHeight, imageHeight)}px`;
+  imagePreviewTarget.style.width = `${imageWidth}px`;
+  imagePreviewTarget.style.height = `${imageHeight}px`;
+  imageZoomLevel.textContent = imageZoom === 1 ? "Fit" : `${Math.round(imageZoom * 100)}%`;
+
+  imagePreviewStage.scrollLeft = Math.max(0, (imagePreviewCanvas.offsetWidth - availableWidth) / 2);
+  imagePreviewStage.scrollTop = Math.max(0, (imagePreviewCanvas.offsetHeight - availableHeight) / 2);
+}
+
+const setImageZoom = function (zoom) {
+  imageZoom = Math.min(4, Math.max(0.25, zoom));
+  updateImagePreviewSize();
+}
+
+imagePreviewButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const sourceImage = button.closest(".achievement-card").querySelector(".project-image");
+
+    imageZoom = 1;
+    imagePreviewTarget.src = sourceImage.src;
+    imagePreviewTarget.alt = sourceImage.alt;
+    imagePreviewDialog.showModal();
+    requestAnimationFrame(updateImagePreviewSize);
+    imagePreviewClose.focus();
+  });
+});
+
+imagePreviewTarget.addEventListener("load", updateImagePreviewSize);
+
+imagePreviewClose.addEventListener("click", function () {
+  imagePreviewDialog.close();
+});
+
+imageZoomIn.addEventListener("click", function () {
+  setImageZoom(imageZoom + 0.25);
+});
+
+imageZoomOut.addEventListener("click", function () {
+  setImageZoom(imageZoom - 0.25);
+});
+
+imageZoomFit.addEventListener("click", function () {
+  setImageZoom(1);
+});
+
+imagePreviewDialog.addEventListener("click", function (event) {
+  if (event.target === imagePreviewDialog) {
+    imagePreviewDialog.close();
+  }
+});
+
+imagePreviewDialog.addEventListener("keydown", function (event) {
+  if (event.key === "+" || event.key === "=") {
+    event.preventDefault();
+    setImageZoom(imageZoom + 0.25);
+  } else if (event.key === "-") {
+    event.preventDefault();
+    setImageZoom(imageZoom - 0.25);
+  } else if (event.key === "0") {
+    event.preventDefault();
+    setImageZoom(1);
+  }
+});
+
+window.addEventListener("resize", function () {
+  if (imagePreviewDialog.open) {
+    updateImagePreviewSize();
+  }
+});
+
 
 
 
