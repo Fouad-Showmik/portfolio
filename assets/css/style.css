@@ -365,6 +365,28 @@ main {
   border-radius: 20px;
 }
 
+@media (max-width: 579px) {
+  .sidebar-info {
+    padding-bottom: 20px;
+  }
+
+  .avatar-box {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+    overflow: hidden;
+    border: 1px solid var(--jet);
+  }
+
+  .avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: inherit;
+  }
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
